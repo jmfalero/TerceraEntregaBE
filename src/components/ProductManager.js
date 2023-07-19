@@ -1,6 +1,6 @@
 const fs =require("fs")
 
-class ProductManager{
+export default class ProductManager{
     constructor(path){
         this.path=path,
      this.products=[  
@@ -97,7 +97,7 @@ class ProductManager{
 
 async function generator(){
     
-const productmanager=new ProductManager("./Json/productos.json");
+//const productmanager=new ProductManager("./Json/productos.json");
 // await productmanager.addProduct("id": 1,"title": "Bersa TPR","description": "Pistola Semiautomatica 9 mm","price": 1500,"thumbnail": "url","code": "BerTpr","stock": 500)
 // await productmanager.addProduct("id": 2,"title": "Bersa TPRX","description": "Pistola Semiautomatica 9 mm para tiro Deporitvo","price": 2000,"thumbnail": "url","code": "BerTprx","stock": 500)
 // await productmanager.addProduct("id": 3,"title": "Bersa Tpr Compact","description": "Pistola Semiautomatica 9 mm Compacta","price": 1300,"thumbnail": "url","code": "BerTprC","stock": 500)
